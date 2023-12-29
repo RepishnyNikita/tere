@@ -1,0 +1,82 @@
+.get-link {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    max-height: 167px;
+    margin: 86px 0 128px;
+    padding: 55px clamp(2.688rem, -1.017rem + 6.59vw, 4.375rem);
+    border-radius: 10px;
+    background-color: var(--accent-color);
+
+    @include tablet(){
+        flex-direction: column;
+        max-height: 250px;
+        gap: 25px;
+        padding: 22px 20px 30px;
+    }
+}
+
+.get-link__form{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    gap: clamp(0.625rem, 0.208rem + 1.85vw, 1.25rem);
+    
+    @include tablet(){
+        flex-direction: column;
+        max-width: 600px;
+    }
+}
+
+.get-link__form-desc {
+    color: var(--additional-color);
+    max-width: 246px;
+    font-size: 24.601px;
+    font-weight: 600;
+    line-height: 1.13;
+}
+
+.get-link__form-input {
+    padding: 0 35px;
+    line-height: clamp(3rem, 2.55rem + 2vw, 4.188rem);
+    max-width: clamp(19.375rem, -6.692rem + 46.34vw, 31.25rem);
+    width: 100%;
+    border-radius: 4.393px;
+    background-color: var(--additional-color);
+    color: var(--color-placeholder);
+    font-size: 20px;
+    font-weight: 600;
+
+    &::placeholder{
+        color: var(--color-placeholder);
+        font-size: clamp(1rem, 0.905rem + 0.42vw, 1.25rem);
+        font-weight: 600;
+    }
+
+    @include tablet(){
+        max-width: inherit;
+    }
+}
+
+.get-link__form-btn {
+    padding: 0 clamp(1.125rem, -1.893rem + 5.37vw, 2.5rem);
+    color: #FFF;
+    line-height: clamp(3rem, 2.55rem + 2vw, 4.188rem);
+    font-family: Gilroy;
+    font-size: clamp(1.125rem, 0.576rem + 0.98vw, 1.375rem);
+    font-style: normal;
+    font-weight: 800;
+    border-radius: 4px;
+    background-color: #000;
+    transition: 0.2s ease-in;
+
+    &:hover{
+        outline: 2px solid #fff;
+        background-color: transparent;
+    }
+
+    @include tablet(){
+        width: inherit;
+    }
+}

@@ -1,0 +1,105 @@
+.benefits {
+    padding-top: 87px;
+}
+
+.benefits__title {
+    text-align: center;
+    margin-bottom: 52px;
+}
+
+.benefits__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+}
+
+.benefits__wrapper-row {
+    padding: 25px clamp(2.25rem, 0.497rem + 7.79vw, 6.875rem) 25px 36px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    max-width: 1060px;
+    width: 100%;
+
+    border-radius: 10px;
+    background-color: var(--additional-color);
+
+    &:nth-child(even){
+        padding-left: clamp(2.25rem, 0.497rem + 7.79vw, 6.875rem);
+        padding-right: 60px;
+        flex-direction: row-reverse;
+        margin-left: clamp(0px, -17.137rem + 27.42vw, 85px);
+
+        @include mobile (){
+            flex-direction: column;
+            padding: 33px 36px 57px;
+        }
+    }
+
+    @include mobile (){
+        flex-direction: column;
+        text-align: center;
+        padding: 33px 36px 57px;
+    }
+}
+
+.benefits__wrapper-row__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+    @include mobile (){
+        gap: 30px;
+    }
+}
+
+.benefits__wrapper-row__text-wrap{
+    display: flex;
+    align-items: center;
+
+    & span{
+        margin-right: clamp(1.75rem, 1.466rem + 1.26vw, 2.5rem);
+        color: var(--accent-color);
+        font-size: clamp(4.063rem, 3.473rem + 2.62vw, 5.438rem);
+        font-weight: 500;
+        line-height: 1.35;
+    }
+}
+
+.benefits__wrapper-row__text-title {
+    max-width: 300px;
+    color: var(--accent-color-text);
+    font-size: clamp(1.563rem, 1.321rem + 1.07vw, 2.125rem);
+    font-weight: 600;
+    line-height: 1.06;
+
+}
+
+.benefits__wrapper-row__text-subtitle {
+    font-size: clamp(1rem, 0.839rem + 0.71vw, 1.375rem);
+    font-weight: 500;
+    line-height: 1.04; 
+    max-width: 385px;
+    overflow: hidden;
+    // word-break:break-all;
+}
+
+.benefits__wrapper-row__img {
+    max-width: 256px;
+
+    @include mobile(){
+        display: none;
+    }
+}
+
+.benefits__wrapper-row__img-mobile{
+    display:none;
+
+    @include mobile (){
+        display: block;
+        max-width: 248px;
+    }
+}

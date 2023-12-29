@@ -1,0 +1,128 @@
+.footer {
+    padding-bottom:200px;
+    margin-top: auto;
+    background-color: var(--accent-color-bg);
+    border-top: 1px solid #ECECEC;
+
+    @include mobile(){
+        border-top: unset;
+        padding-bottom: 160px;
+    }
+}
+
+.footer-row {
+    padding: 70px 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    @include mobile () {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+.footer-row__logo {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.footer-row__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: clamp(20px, -9.435rem + 17.1vw, 73px);
+    row-gap: 30px;
+    justify-content: flex-end;
+
+    @include tablet(){
+        text-align: center;
+    }
+
+    @include mobile(){
+        flex-direction: column-reverse;
+        align-items: center;
+        row-gap: 40px;
+    }
+}
+
+.footer-row__col {
+    max-width: 210px;
+}
+
+.footer-row__col-title {
+    color: #272042;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 21px;
+}
+
+.footer-row__col-list {
+    display: grid;
+    row-gap: 15px;
+}
+
+.footer-row__col-list__item {
+
+    & a{
+        color: var(--footer-color-text);
+        font-size: 18px;
+        font-weight: 400;
+        transition: 0.2s ease-in;
+
+        &:hover{
+            color: var(--accent-color);
+        }
+    }
+}
+
+.footer-row__btn {
+    margin-left: clamp(0rem, -10.081rem + 16.13vw, 3.125rem);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    @include mobile(){
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+.footer-row__btn-dwnl {
+    display: flex;
+    align-items: center;
+    padding: 0 22px;
+    color: #FFF;
+    font-size: 16.89px;
+    font-weight: 800;
+    line-height: 46px;
+
+    border-radius: 3.433px;
+    background-color: #000;
+
+    transition: 0.2s ease-in;
+
+    img{
+        max-width: 30px;
+        margin-right: 7px;
+    }
+
+    &:hover{
+        background-color: var(--accent-color);
+    }
+}
+
+.footer__copyright{
+    padding-top: 40px;
+    color: var(--accent-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    border-top: 1px solid #ECECEC;
+
+    @include mobile(){
+        color: inherit;
+        border-top: unset;
+        padding-top: unset;
+    }
+}

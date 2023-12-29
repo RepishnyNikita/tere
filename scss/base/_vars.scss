@@ -1,0 +1,30 @@
+:root{
+    --main-text:'Gilroy';
+    --accent-text:'ITC Avant Garde Gothic Std';
+
+    --main-color-bg:#F9F9F9;
+    --accent-color-bg: #fff;
+
+    --color-placeholder:#DADADA;
+
+    --accent-color:#75BF7A;
+    --color-main-text:#9E9DA2;
+
+    --accent-color-text:#000;
+    --additional-color:#fff;
+
+    --footer-color-text:#8B8BA5;
+
+}
+
+@mixin tablet (){
+    @media(max-width: 900px){
+        @content;
+    }
+}
+
+@mixin mobile(){
+    @media(max-width:640px){
+        @content;
+    }
+}

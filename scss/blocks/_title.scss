@@ -1,0 +1,11 @@
+.title{
+    color: var(--accent-color-text);
+    font-size: clamp(1.5rem, 0.911rem + 2.62vw, 2.875rem);
+    font-weight: 800;
+    line-height: 1.08;
+    text-transform: uppercase;
+
+    span {
+        color: var(--accent-color);
+    }
+}

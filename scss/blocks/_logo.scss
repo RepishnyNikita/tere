@@ -1,0 +1,6 @@
+.logo {
+    
+    & img {
+        height: clamp(1.688rem, 1.203rem + 2.42vw, 3.188rem);
+    }
+}

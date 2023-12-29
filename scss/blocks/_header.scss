@@ -1,0 +1,10 @@
+.header {
+    padding:clamp(2.813rem, 1.384rem + 5.19vw, 5.313rem) 0 35px;
+    max-height: 170px;
+    background-color: var(--accent-color-bg);
+    
+
+    @include tablet(){
+        background-color: inherit;
+    }
+}
