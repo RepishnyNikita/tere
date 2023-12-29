@@ -55,31 +55,3 @@
     display: flex;
     gap: clamp(1.063rem, 0.767rem + 1.48vw, 1.875rem);
 }
-
-.btn-dwl {
-    display: flex;
-    align-items: center;
-    color: var(--additional-color);
-    font-size: clamp(0.875rem, 0.673rem + 1.01vw, 1.5rem);
-    font-weight: 800;
-    text-transform: uppercase;
-
-    padding:0 clamp(1.125rem, 0.807rem + 1.59vw, 2rem);
-    line-height: clamp(2.438rem, 1.801rem + 3.18vw, 4.188rem);
-    border-radius: 5px;
-    background-color:var(--accent-color-text);
-
-    transition: 0.2s ease-in;
-
-    & img {
-        margin-right: clamp(0.313rem, 0.153rem + 0.8vw, 0.75rem);
-        width: 100%;
-    }
-
-    &:hover{
-        background-color: var(--accent-color);
-    }
-}
-
-.main-row__col-img {
-}

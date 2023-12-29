@@ -33,27 +33,6 @@
     }
 }
 
-.button {
-    color: var(--additional-color);
-    padding: 0 29px;
-    font-size: 22px;
-    font-weight: 600;
-    border-radius: 5.952px;
-    background-color: var(--accent-color);
-    transition: 0.2s ease-in;
-    line-height: 50px;
-
-
-    &:hover{
-        transform: scale(1.1);
-    }
-
-    @include tablet{
-        display: none;
-    }
-}
-
-
 .nav-mobile {
     display: none;
     position: fixed;

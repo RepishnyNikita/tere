@@ -95,6 +95,7 @@ legend {
   --color-main-text:#9E9DA2;
   --accent-color-text:#000;
   --additional-color:#fff;
+  --accent-color-btn:#000;
   --footer-color-text:#8B8BA5;
 }
 
@@ -138,6 +139,73 @@ body {
   }
 }
 
+.button {
+  display: flex;
+  align-items: center;
+  padding: 0 29px;
+  font-size: 22px;
+  background-color: var(--accent-color-btn);
+  transition: 0.2s ease-in;
+  border-radius: 4px;
+  color: var(--additional-color);
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 67px;
+}
+.button--nav {
+  background-color: var(--accent-color);
+  line-height: 50px;
+  font-weight: 600;
+  text-transform: none;
+}
+.button--nav:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 900px) {
+  .button--nav {
+    display: none;
+  }
+}
+.button--download {
+  font-size: clamp(0.875rem, 0.673rem + 1.01vw, 1.5rem);
+  padding: 0 clamp(1.125rem, 0.807rem + 1.59vw, 2rem);
+  line-height: clamp(2.438rem, 1.801rem + 3.18vw, 4.188rem);
+}
+.button--download img {
+  margin-right: clamp(0.313rem, 0.153rem + 0.8vw, 0.75rem);
+  width: 100%;
+}
+.button--download:hover {
+  background-color: var(--accent-color);
+}
+.button--form {
+  padding: 0 clamp(1.125rem, -1.893rem + 5.37vw, 2.5rem);
+  line-height: clamp(3rem, 2.55rem + 2vw, 4.188rem);
+  font-size: clamp(1.125rem, 0.576rem + 0.98vw, 1.375rem);
+}
+.button--form:hover {
+  outline: 2px solid #fff;
+  background-color: transparent;
+}
+@media (max-width: 900px) {
+  .button--form {
+    width: inherit;
+  }
+}
+.button--footer {
+  padding: 0 22px;
+  font-size: 16.89px;
+  line-height: 46px;
+  border-radius: 3px;
+}
+.button--footer img {
+  max-width: 30px;
+  margin-right: 7px;
+}
+.button--footer:hover {
+  background-color: var(--accent-color);
+}
+
 .nav {
   flex-wrap: wrap;
   display: flex;
@@ -171,25 +239,6 @@ body {
 }
 .nav-list__link:hover {
   color: var(--accent-color);
-}
-
-.button {
-  color: var(--additional-color);
-  padding: 0 29px;
-  font-size: 22px;
-  font-weight: 600;
-  border-radius: 5.952px;
-  background-color: var(--accent-color);
-  transition: 0.2s ease-in;
-  line-height: 50px;
-}
-.button:hover {
-  transform: scale(1.1);
-}
-@media (max-width: 900px) {
-  .button {
-    display: none;
-  }
 }
 
 .nav-mobile {
@@ -371,27 +420,6 @@ body {
   gap: clamp(1.063rem, 0.767rem + 1.48vw, 1.875rem);
 }
 
-.btn-dwl {
-  display: flex;
-  align-items: center;
-  color: var(--additional-color);
-  font-size: clamp(0.875rem, 0.673rem + 1.01vw, 1.5rem);
-  font-weight: 800;
-  text-transform: uppercase;
-  padding: 0 clamp(1.125rem, 0.807rem + 1.59vw, 2rem);
-  line-height: clamp(2.438rem, 1.801rem + 3.18vw, 4.188rem);
-  border-radius: 5px;
-  background-color: var(--accent-color-text);
-  transition: 0.2s ease-in;
-}
-.btn-dwl img {
-  margin-right: clamp(0.313rem, 0.153rem + 0.8vw, 0.75rem);
-  width: 100%;
-}
-.btn-dwl:hover {
-  background-color: var(--accent-color);
-}
-
 .get-link {
   display: flex;
   gap: 10px;
@@ -457,28 +485,6 @@ body {
 @media (max-width: 900px) {
   .get-link__form-input {
     max-width: inherit;
-  }
-}
-
-.get-link__form-btn {
-  padding: 0 clamp(1.125rem, -1.893rem + 5.37vw, 2.5rem);
-  color: #FFF;
-  line-height: clamp(3rem, 2.55rem + 2vw, 4.188rem);
-  font-family: Gilroy;
-  font-size: clamp(1.125rem, 0.576rem + 0.98vw, 1.375rem);
-  font-style: normal;
-  font-weight: 800;
-  border-radius: 4px;
-  background-color: #000;
-  transition: 0.2s ease-in;
-}
-.get-link__form-btn:hover {
-  outline: 2px solid #fff;
-  background-color: transparent;
-}
-@media (max-width: 900px) {
-  .get-link__form-btn {
-    width: inherit;
   }
 }
 
@@ -842,26 +848,6 @@ body {
     flex-direction: column;
     gap: 8px;
   }
-}
-
-.footer-row__btn-dwnl {
-  display: flex;
-  align-items: center;
-  padding: 0 22px;
-  color: #FFF;
-  font-size: 16.89px;
-  font-weight: 800;
-  line-height: 46px;
-  border-radius: 3.433px;
-  background-color: #000;
-  transition: 0.2s ease-in;
-}
-.footer-row__btn-dwnl img {
-  max-width: 30px;
-  margin-right: 7px;
-}
-.footer-row__btn-dwnl:hover {
-  background-color: var(--accent-color);
 }
 
 .footer__copyright {
